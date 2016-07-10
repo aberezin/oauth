@@ -1,0 +1,10 @@
+version: '2'
+services:
+    oauthdb-elasticsearch:
+        container_name: oauthdb-elasticsearch
+        image: elasticsearch:1.7.5
+        # volumes:
+        #     - ~/volumes/jhipster/oauthdb/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
