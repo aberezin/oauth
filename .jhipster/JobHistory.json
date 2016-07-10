@@ -1,0 +1,48 @@
+{
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "relationshipName": "job",
+      "otherEntityName": "job",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "jobHistory"
+    },
+    {
+      "relationshipType": "one-to-one",
+      "relationshipName": "department",
+      "otherEntityName": "department",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "jobHistory"
+    },
+    {
+      "relationshipType": "one-to-one",
+      "relationshipName": "employee",
+      "otherEntityName": "employee",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "jobHistory"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "startDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "language",
+      "fieldType": "Language",
+      "fieldValues": "FRENCH,ENGLISH,SPANISH"
+    }
+  ],
+  "changelogDate": "20160710234413",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "no",
+  "entityTableName": "job_history"
+}

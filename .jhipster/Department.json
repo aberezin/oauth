@@ -1,0 +1,36 @@
+{
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "relationshipName": "location",
+      "otherEntityName": "location",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "department"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "relationshipName": "employee",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "department"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "departmentId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "departmentName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "changelogDate": "20160710234409",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "department"
+}

@@ -1,0 +1,30 @@
+{
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "relationshipName": "job",
+      "otherEntityName": "job",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "task"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "taskId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160710234410",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "task"
+}
